@@ -7,3 +7,12 @@
         </div>
     </div>
 </div>
+<script tyoe="text/javascript">
+    document.addEventListener('DOMContentLoaded', function GetFavColor() {
+
+            document.body.style.backgroundImage = "url('includes/imgs/back1.jpg')"
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+
+    });
+</script>

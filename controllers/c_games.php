@@ -13,6 +13,18 @@ switch ($action)
         require "vues/v_games.php" ;
         break ;
     };
+    case "search" : {
+        if($_POST['radio'] == "j") {
+            $games = getGamesByName($_POST['gamename']);
+            require "vues/v_games.php" ;
+            break ;
+        } else {
+            $games = getGamesBySupport($_POST['gamename']);
+            require "vues/v_games.php" ;
+            break ;
+        }
+        
+    }
 
 }
 
