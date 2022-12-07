@@ -11,5 +11,11 @@ function verifConnexion($loginSaisi, $mdpSaisi) {
   return $curseur;
 }
 
-
+function getAllConsole() {
+    require "includes/models/connexion.php";
+    $req = $bdd->prepare("SELECT id, libelle, idMarque, image, couleur FROM console");
+    $req->execute();
+    $curseur = $req->fetchAll();
+  return $curseur;
+}
 ?>  

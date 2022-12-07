@@ -12,6 +12,8 @@ switch ($uc)
     }
     case 'login' : { include "c_auth.php"; break ; 
     }
+    case 'console' : { include "c_console.php"; break ; 
+    }
 }
 
 ?>
