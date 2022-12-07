@@ -24,6 +24,13 @@ switch ($action)
             break ;
         }
         
+    };
+    case "gestion": {
+        $games = getAllGames();
+        $etats = getAllEtats();
+        $consoles = getAllConsoles();
+        require "vues/v_games_gestion.php" ;
+        break ;
     }
 
 }

@@ -35,4 +35,20 @@ function getGamesBySupport() {
   return $curseur;
 }
 
+function getAllEtats() {
+  require "includes/models/connexion.php";
+  $req = $bdd->prepare("SELECT id, libelle FROM etat");
+  $req->execute();
+  $curseur = $req->fetchAll();
+  return $curseur;
+}
+
+function getAllConsoles() {
+  require "includes/models/connexion.php";
+  $req = $bdd->prepare("SELECT id, libelle FROM console ");
+  $req->execute();
+  $curseur = $req->fetchAll();
+  return $curseur;
+}
+
 ?>  

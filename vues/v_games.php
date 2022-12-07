@@ -1,12 +1,28 @@
 <div class="page">
     <div class="container">
-        <h2 class="color-white">Affichage des jeux</h2>
-        <form method="POST" action="index.php?uc=games&action=search" >
-            <input type="text" name="gamename"  placeholder="Mario"><br>
-            <span class="color-white">Par console </span><input type="radio" name="radio" value="m">
-            <span class="color-white">Par nom de jeu </span><input type="radio" name="radio" value="j"><br>
-            <button type="submit">Rechercher</button>
-        </form>
+        <div class="row" style="margin-top: 3em; font-size: 1.2em">
+            <div class="col">
+                <h2 class="color-white" style="font-size: 3em !important">Affichage des jeux</h2>
+                <?php 
+                if(isset($_SESSION['id'])) { 
+                    if($_SESSION['id'] == 1) { 
+                        echo '<a href="index.php?uc=games&action=gestion" class="btn" style="font-size: 1em; background-color:#25CF03">Gestion jeux</a>';
+                    }
+                }
+                ?>
+                
+            </div>
+            <div class="col align-items-end d-flex" style="flex-direction: row-reverse;">
+                <form method="POST" action="index.php?uc=games&action=search">
+                    <input type="text" name="gamename" style="width: 300px"  placeholder="Mario"><br>
+                    <span class="color-white">Par console </span><input type="radio" name="radio" value="m">
+                    <span class="color-white">Par nom de jeu </span><input type="radio" name="radio" value="j"><br>
+                    <button type="submit">Rechercher</button>
+                </form>
+            </div>
+        </div>
+       <br>
+        
         <?php
             $count = 0;
             foreach ( $games as $game ) {
@@ -45,6 +61,7 @@
             document.body.style.backgroundImage = "url('includes/imgs/bg1.png')"
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundAttachment = "fixed";
 
     });
 </script>
