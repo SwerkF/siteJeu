@@ -1,3 +1,10 @@
+<style>
+    * {
+    background-image: url('../imgs/back1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
 <div class="page">
     <div class="container">
         <div class="row text-center align-items-center">
@@ -22,3 +29,13 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function GetFavColor() {
+        var color = localStorage.getItem('color');
+        if (color != '') {
+            document.body.style.backgroundImage = "url('includes/imgs/back1.jpg')"
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+        }
+    });
+</script>

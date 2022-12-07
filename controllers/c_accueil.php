@@ -9,9 +9,9 @@ else
 switch ($action)
 {
 	case "afficher" : {
-            require "vues/v_index.php" ;
-            break ;
-        };
+        require "vues/v_index.php" ;
+        break ;
+    };
 
 }
 

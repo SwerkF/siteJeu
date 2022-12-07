@@ -16,8 +16,7 @@
         
     </head>
     <body>
-        <div class="background">
-        </div>
+        
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <img src="./includes/imgs/coin.png" style="width:3em"><span class="navbar-brand big-2" href="#">&nbsp;Coinllection</span>
@@ -28,7 +27,7 @@
                 <ul class="navbar-nav me-auto">
 
                     <li class="nav-item">
-                    <a class="nav-link active big-1" href="#">Jeux</a>
+                    <a class="nav-link active big-1" href="index.php?uc=games&action=afficher">Jeux</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active big-1" href="#">Console</a>
