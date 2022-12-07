@@ -12,6 +12,8 @@ switch ($uc)
     }
     case 'login' : { include "c_auth.php"; break ; 
     }
+    case 'marques' : { include "c_marques&etats.php"; break ; 
+    }
 }
 
 ?>

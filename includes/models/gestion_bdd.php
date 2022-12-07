@@ -10,6 +10,19 @@ function verifConnexion($loginSaisi, $mdpSaisi) {
     $curseur = $req->fetch();
   return $curseur;
 }
-
+function getmarques() {
+    require "includes/models/connexion.php";
+    $req = $bdd->prepare("SELECT * FROM marque");
+    $req->execute();
+    $curseur = $req->fetchall();
+return $curseur;
+}
+function getetats() {
+    require "includes/models/connexion.php";
+    $req = $bdd->prepare("SELECT * FROM etat");
+    $req->execute();
+    $curseur = $req->fetchall();
+return $curseur;
+}
 
 ?>  

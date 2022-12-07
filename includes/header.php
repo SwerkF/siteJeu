@@ -34,7 +34,7 @@
                     <a class="nav-link active big-1" href="#">Console</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active big-1" href="#">Marques</a>
+                    <a class="nav-link active big-1" href="index.php?uc=marques&action=afficher">Marques&Etats</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
