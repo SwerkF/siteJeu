@@ -5,8 +5,18 @@
     background-size: cover; 
     </style>
     <div class="container">
-        <div class="row text-center align-items-center" style="margin-top: 40vh; color: #fff !important">
+        <div class="row text-center align-items-center" style="margin-top: 40vh;  color: #fff !important">
             <h1>Consultation des marques & états</h1>
+            <?php
+                if(isset($_SESSION['id'])) {
+                    if($_SESSION['id'] == 1) {
+                        ?>
+                        <a class="btn btn-primary" href="index.php?uc=marques&action=insert" style=" font-size: 25px; background-color: green;">Insérer une console</a>
+                        <?php
+                    }    
+                  }
+            ?>
+
         </div>
         <div class="row align-items-center" style="margin-top: 50vh">
             <div class="col">

@@ -24,5 +24,15 @@ function getetats() {
     $curseur = $req->fetchall();
 return $curseur;
 }
+function ajoutmarque($libelle) {
+    require "includes/models/connexion.php";
+    $req = $bdd->prepare("INSERT INTO marque (libelle) VALUES ('$libelle')");
+    $req->execute();
+}
+function ajoutetat($libelle) {
+    require "includes/models/connexion.php";
+    $req = $bdd->prepare("INSERT INTO etat (libelle) VALUES ('$libelle')");
+    $req->execute();
+}
 
 ?>  
