@@ -18,4 +18,18 @@ function getAllConsole() {
     $curseur = $req->fetchAll();
   return $curseur;
 }
+
+function getAllMarques() {
+  require "includes/models/connexion.php";
+  $req = $bdd->prepare("SELECT id, libelle FROM marque");
+  $req->execute();
+  $curseur = $req->fetchAll();
+return $curseur;
+}
+
+function InsertConsole($nom, $console, $photo, $couleur) {
+  require "includes/models/connexion.php";
+  $req = $bdd->prepare("INSERT INTO console(libelle, idMarque, image, couleur) VALUES ('$nom','$console','$photo','$couleur')");
+  $req->execute();
+}
 ?>  

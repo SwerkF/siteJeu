@@ -27,6 +27,15 @@
         </style>
         <div class="row text-center">
             <h1 class="titre">Bienvenue sur la page des Consoles</h1>
+            <?php
+                if(isset($_SESSION['id'])) {
+                    if($_SESSION['id'] == 1) {
+                        ?>
+                        <a class="btn btn-primary" href="index.php?uc=console&action=insert" style="position: absolute !important; width: 300px; transform: translate(165%, 900%); font-size: 25px; background-color: green;">Insérer une console</a>
+                        <?php
+                    }    
+                  }
+            ?>
         </div>
     </div>
     <div class="card2">
