@@ -1,6 +1,19 @@
+.nav-link, .navbar-brand {
+    font-family: 'VT323', monospace !important;
+}
+
+.nav-link, .navbar-brand {
+    
+    color: #f5f5f5 !important
+}
+
 * {
     font-family: 'VT323', monospace !important;
-    color: #f5f5f5 !important
+}
+.big-05 {
+    font-size: 1.4em !important;
+    text-shadow: 0.05em 0 rgb(0, 0, 0), -0.05em 0 rgb(0, 0, 0), 0 0.05em rgb(0, 0, 0), 0 -0.05em rgb(0, 0, 0),
+    0.05em 0.05em rgb(0, 0, 0), -0.05em -0.05em rgb(0, 0, 0), 0.05em -0.05em rgb(0, 0, 0), -0.05em 0.05em rgb(0, 0, 0);
 }
 
 .big-1 {
@@ -22,11 +35,7 @@
 .page {
     height: 100%;
 }
-body {
-    background-image: url('../imgs/back1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 input[type="text"], input[type="password"] {
     color: black !important;
@@ -35,4 +44,70 @@ input[type="text"], input[type="password"] {
 button {
     background-color: #f5f5f5 !important;
     color: black !important;
+}   
+
+.img-jeu {
+    width:250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+.text1 {
+    color: #FFC107;
+    font-size: 2em;
+}
+
+.text2 {
+    color: #FFC107;
+    font-size: 2em;
+}
+
+.img-translate{
+    transform: translateX(-400px);
+}
+.img-translate1{
+    transform: translateX(272px);
+}
+
+.img-translate3{
+    
+    padding-top: 20px;
+    transform: translateX(400px);
+}
+
+
+.card {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 0.05em 0 rgb(0, 0, 0), -0.05em 0 rgb(0, 0, 0), 0 0.05em rgb(0, 0, 0), 0 -0.05em rgb(0, 0, 0),
+    0.05em 0.05em rgb(0, 0, 0), -0.05em -0.05em rgb(0, 0, 0), 0.05em -0.05em rgb(0, 0, 0), -0.05em 0.05em rgb(0, 0, 0); 
+    height: 500px;
+}
+
+.img-jeu {
+    width:70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+.card-body {
+    margin-top: 30px;
+    background-color: #25CF03;
+}
+
+.color-white {
+    color: #f5f5f5 !important;
+    text-shadow: 0.05em 0 rgb(0, 0, 0), -0.05em 0 rgb(0, 0, 0), 0 0.05em rgb(0, 0, 0), 0 -0.05em rgb(0, 0, 0),
+    0.05em 0.05em rgb(0, 0, 0), -0.05em -0.05em rgb(0, 0, 0), 0.05em -0.05em rgb(0, 0, 0), -0.05em 0.05em rgb(0, 0, 0); 
+
+}
+
+.form-colors {
+    color: #f5f5f5 !important;
+}
+
+.card-texr {
+    color:rgb(255, 255, 255) !important
 }

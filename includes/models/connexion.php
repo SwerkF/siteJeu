@@ -1,7 +1,7 @@
 <?php
 $PARAM_hote='localhost';
 $PARAM_port='';
-$PARAM_nom_bd='collection_jeux';
+$PARAM_nom_bd='collection jeux';
 $PARAM_utilisateur='root';
 $PARAM_mot_passe='';
  

@@ -16,11 +16,10 @@
         
     </head>
     <body>
-        <div class="background">
-        </div>
+        
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <img src="./includes/imgs/coin.png" style="width:3em"><span class="navbar-brand big-2" href="#">&nbsp;Coinllection</span>
+                <img src="./includes/imgs/coin.png" style="width:3em"><span ><a class="navbar-brand big-2" href="index.php?uc=accueil">&nbsp;Coinllection</a></span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,13 +27,13 @@
                 <ul class="navbar-nav me-auto">
 
                     <li class="nav-item">
-                    <a class="nav-link active big-1" href="#">Jeux</a>
+                    <a class="nav-link active big-1" href="index.php?uc=games&action=afficher">Jeux</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active big-1" href="#">Console</a>
+                    <a class="nav-link active big-1" href="index.php?uc=console&action=afficher">Console</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active big-1" href="#">Marques</a>
+                    <a class="nav-link active big-1" href="index.php?uc=marques&action=afficher">Marques&Etats</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
