@@ -16,6 +16,8 @@ switch ($uc)
     }
     case 'console' : { include "c_console.php"; break ; 
     }
+    case 'marques' : { include "c_marques&etats.php"; break ; 
+    }
 }
 
 ?>
