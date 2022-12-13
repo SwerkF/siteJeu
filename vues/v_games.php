@@ -44,8 +44,8 @@
                 echo "</div>";
                 $count++;
 
-                if($count == 4) {
-                    echo "</div>";
+                if($count == 3) {
+                    echo "</div><br>";
                     $count = 0;
                 }
             };         

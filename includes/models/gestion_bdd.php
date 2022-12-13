@@ -13,7 +13,7 @@ function verifConnexion($loginSaisi, $mdpSaisi) {
 
 function getAllGames() {
   require "includes/models/connexion.php";
-  $req = $bdd->prepare("SELECT jeux.libelle as jeuLib, prix, image as jeuImg, studio, idEtat, console.libelle as consoleLib, etat.libelle as etatLib FROM jeux INNER JOIN etat on idEtat = etat.id INNER JOIN console on idConsole = console.id; ");
+  $req = $bdd->prepare("SELECT jeux.id as idJeu, jeux.libelle as jeuLib, prix, image as jeuImg, studio, idEtat, console.libelle as consoleLib, etat.libelle as etatLib FROM jeux INNER JOIN etat on idEtat = etat.id INNER JOIN console on idConsole = console.id; ");
   $req->execute();
   $curseur = $req->fetchAll();
   return $curseur;
@@ -50,5 +50,18 @@ function getAllConsoles() {
   $curseur = $req->fetchAll();
   return $curseur;
 }
+
+function insertJeu($libelle, $prix, $image, $studio, $etat, $console) {
+  require "includes/models/connexion.php";
+  $req = $bdd->prepare("INSERT INTO jeux (libelle, prix, image, studio, idEtat, idConsole) VALUES ('$libelle', '$prix', '$image', '$studio', '$etat', '$console')");
+  $req->execute();
+}
+
+function deleteJeu($id) {
+  require "includes/models/connexion.php";
+  $req = $bdd->prepare("DELETE FROM jeux WHERE id = '$id'");
+  $req->execute();
+}
+
 
 ?>  
