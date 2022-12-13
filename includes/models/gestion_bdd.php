@@ -11,6 +11,13 @@ function verifConnexion($loginSaisi, $mdpSaisi) {
   return $curseur;
 }
 
+function getAllConsole() {
+    require "includes/models/connexion.php";
+    $req = $bdd->prepare("SELECT id, libelle, idMarque, image, couleur FROM console");
+    $req->execute();
+    $curseur = $req->fetchAll();
+  return $curseur;
+}
 function getAllGames() {
   require "includes/models/connexion.php";
   $req = $bdd->prepare("SELECT jeux.id as idJeu, jeux.libelle as jeuLib, prix, image as jeuImg, studio, idEtat, console.libelle as consoleLib, etat.libelle as etatLib FROM jeux INNER JOIN etat on idEtat = etat.id INNER JOIN console on idConsole = console.id; ");
@@ -19,6 +26,19 @@ function getAllGames() {
   return $curseur;
 }
 
+function getAllMarques() {
+  require "includes/models/connexion.php";
+  $req = $bdd->prepare("SELECT id, libelle FROM marque");
+  $req->execute();
+  $curseur = $req->fetchAll();
+return $curseur;
+}
+
+function InsertConsole($nom, $console, $photo, $couleur) {
+  require "includes/models/connexion.php";
+  $req = $bdd->prepare("INSERT INTO console(libelle, idMarque, image, couleur) VALUES ('$nom','$console','$photo','$couleur')");
+  $req->execute();
+}
 function getGamesByName() {
   require "includes/models/connexion.php";
   $req = $bdd->prepare("SELECT jeux.libelle as jeuLib, prix, image as jeuImg, studio, idEtat, console.libelle as consoleLib, etat.libelle as etatLib FROM jeux INNER JOIN etat on idEtat = etat.id INNER JOIN console on idConsole = console.id WHERE jeux.libelle LIKE '".$_POST['gamename']."%'; ");

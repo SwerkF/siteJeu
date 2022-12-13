@@ -14,6 +14,8 @@ switch ($uc)
     }
     case 'games' : { include "c_games.php"; break ; 
     }
+    case 'console' : { include "c_console.php"; break ; 
+    }
 }
 
 ?>

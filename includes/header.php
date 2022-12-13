@@ -30,7 +30,7 @@
                     <a class="nav-link active big-1" href="index.php?uc=games&action=afficher">Jeux</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active big-1" href="#">Console</a>
+                    <a class="nav-link active big-1" href="index.php?uc=console&action=afficher">Console</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active big-1" href="#">Marques</a>
